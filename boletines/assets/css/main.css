@@ -1,0 +1,171 @@
+/*
+Colores a usar.
+Azul: #58B7B8
+Mostaza: #F8CE3D
+Naranja: #DF6127
+Veish: #F2E4B1
+Verde: #12403E
+Morado: #7E01F6
+verde agua: #12E0AB
+border-spacing: 0;
+Rojo: #D61413;
+background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+font-family: 'Charmonman', cursive;
+*/
+
+html{
+  font-family: 'Mali', cursive;
+}
+
+a{
+  text-decoration: none;
+  color: #D61413;
+  font-weight: 700;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+td{
+  border:solid 2px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.parrafo{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+.container{
+  background: #DE6262;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  max-width: 960px;
+  max-height: 560px;
+  width: 100%;
+  height: 100%;
+  background-color: #F2E4B1;
+  box-shadow: 0 3px 6px 2px rgba(0,0,0,0.16), 0 3px 6px 2px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  position: relative;
+  overflow: scroll;
+}
+
+.actions{
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.close{
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #DF6127;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  padding: 1em;
+}
+td{ display: block; width: 100%;}
+
+td:nth-of-type(1){
+  font-size: 1.5em;
+}
+
+th{ display: none;}
+
+/*Estrellas*/
+.fa-star, .fa-star-half-alt{
+  color: #DF6127;
+}
+/*icono mapa*/
+.fa-map-marker-alt{
+  color: #D61413;
+}
+
+.table{
+  width: 100%;
+}
+
+.table td, .table th{
+  text-align: left;
+  padding: 1em;
+}
+
+.table tr:nth-child(even){
+  background-color: #FFC350;/*FFB968*/
+}
+/*Estos selectores son para modificar la descripcion de los restaurantes*/
+.titulo-items{
+  /*border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #7E01F6;*/
+  border-bottom: solid 2px #DF6127;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.address{
+  color: #DF6127;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height: 240px;
+  width: 400px;
+}
+
+.posicion{
+  background-color: #DF6127;
+  color: white;
+  padding: 0.5em;
+  border-radius: 8px;
+  margin-left: 0.5em;
+}
+
+@media (min-width:900px){
+  .content{
+    padding: 1.8em;
+  }
+  td{ display: table-cell; width: auto;}
+
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+
+  th{ display: table-cell;}
+}
+
+@media (min-height:550px){
+  .content{
+    height: 500px;
+  }
+}
