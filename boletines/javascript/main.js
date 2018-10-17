@@ -20,7 +20,7 @@ let links = document.querySelectorAll(".close");
       content.classList.add("fadeOutUp");
       content.classList.add("animated");
       setTimeout(function(){
-        location.href = "/";
+        location.href = "/boletines";
       },700);
 
       return false;
